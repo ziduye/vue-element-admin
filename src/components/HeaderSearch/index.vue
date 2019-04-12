@@ -1,6 +1,6 @@
 <template>
   <div :class="{'show':show}" class="header-search">
-    <svg-icon class-name="search-icon" icon-class="search" @click="click" />
+    <svg-icon class-name="search-icon" icon-class="search" @click.stop="click" />
     <el-select
       ref="headerSearchSelect"
       v-model="search"
@@ -18,6 +18,8 @@
 </template>
 
 <script>
+// fuse is a lightweight fuzzy-search module
+// make search results more in line with expectations
 import Fuse from 'fuse.js'
 import path from 'path'
 import i18n from '@/lang'

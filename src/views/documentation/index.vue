@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-import DropdownMenu from '@/components/Share/dropdownMenu'
+import DropdownMenu from '@/components/Share/DropdownMenu'
 
 export default {
   name: 'Documentation',
@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style rel="stylesheet/scss" lang="scss" scoped>
+<style lang="scss" scoped>
 .documentation-container {
   margin: 50px;
   .document-btn {
